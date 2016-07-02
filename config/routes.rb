@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   #   resources :products
 
 get "/pages/:page" => "pages#show"
-root "pages#show", page: "about"
+get "/pages/about", to: "pages#about", as: "about"
+root "pages#show", page: "home"
+
   # Example resource route with options:
   #   resources :products do
   #     member do
