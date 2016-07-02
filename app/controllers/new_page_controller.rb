@@ -1,4 +1,4 @@
-class NewPage < ApplicationController
+class NewPageController < ApplicationController
 
 	def show
 		render template: "pages/#{params[:page]}"
