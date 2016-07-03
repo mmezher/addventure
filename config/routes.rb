@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   #   resources :products
 
 get "/pages/:page" => "pages#show"
+get "/pages/home", to: "pages#home", as: "home"
+get "/pages/plan", to: "pages#plan", as: "plan"
+get "/pages/browse", to: "pages#browse", as: "browse"
+get "/pages/add", to: "pages#add", as: "add"
 get "/pages/about", to: "pages#about", as: "about"
 root "pages#show", page: "home"
 

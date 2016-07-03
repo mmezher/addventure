@@ -1,0 +1,2 @@
+<h2> browse </h2>
+<%= link_to "Back to Home", home_path %>

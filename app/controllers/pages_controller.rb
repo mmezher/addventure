@@ -7,4 +7,12 @@ class PagesController < ApplicationController
 	end
 	def home
 	end
+	def add
+	end
+	def browse
+	end
+	def plan
+	end
+
+	
 end 
