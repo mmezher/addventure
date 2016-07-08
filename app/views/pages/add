@@ -1,3 +1,5 @@
+
+<% provide(:title, "Add A Venture") %>
 <h1> Add page </h1>
 <p> for adding adventures </p>
 <%= link_to "Back to Home", home_path %>

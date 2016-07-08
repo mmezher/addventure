@@ -1,12 +1,24 @@
-
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
 <center><h2>
  Home Page 
 </h2></center>
-<heading> <center>
-	<%= link_to "About  |", about_path %><%= link_to "Add A Venture |", add_path %><%= link_to "Plan A Trip ", plan_path %><button><%= link_to "Search", browse_path %></button><input>                
-</heading></center>
+	<ul class "nav navbar-nav navbar-right">
+		<li>
+			<%= link_to "About  |", about_path %>
+		</li>
+		<li>
+			<%= link_to "Add A Venture |", add_path %>
+		</li>
+		<li>
+			<%= link_to "Plan A Trip ", plan_path %>
+		</li>
+		<li>
+			<input><button><%= link_to "Search", browse_path %></button>
+			
+		</li>
+	</ul>                
+</center>
 <p> 
 	This will be the home page. eventually may need to change it to dynamic page with login, popular places, nice background, etc.
 </p>
-
-	

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Addventure</title>
- 
+  <title><%= yeild(:title) %> | Addventure</title>
+  <%= csrf_meta_tages %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
 </head>
 <body>
-
-<%= yield %>
-
+	<%= yield %>
 </body>
 </html>
