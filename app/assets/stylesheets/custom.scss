@@ -3,7 +3,7 @@
 /*universal*/
 
 body {
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 section {
@@ -20,4 +20,77 @@ textarea {
 
 .center h1 {
 	margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo{
+  float: left;
+  margin-right: 10px;
+  font-size: 2.0em;
+  color: #7FFF00; /* LimeGreen */
+  font-family: "Brush Script MT", cursive;
+  /*text-transform: uppercase;*/
+  letter-spacing: -1px;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+	color: #fff;
+}
+.nav {
+	font-family: "Brush Script MT", cursive;
+	font-size: 1.4em;
+	font-weight: bold; 
+
+}
+.nav:hover {
+	color: #7FFF00;
+}
+#login-nav {
+	font-family: "Brush Script MT", cursive;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: #000;
+	border: 2px solid #fff;
+	margin-top: 5px;
+	border-radius: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #7FFF00; /* LimeGreen */
+	display: inline-block;
+	transition-duration: 0.4s;
+}
+
+#login-nav:hover { 
+	color: #7FFF00;
+	background-color: black; 
 }
