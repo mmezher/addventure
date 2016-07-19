@@ -7,26 +7,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
 </head>
 <body>
-	<header class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container">
-			<li><%= link_to "AddVenture", "#", id:"logo" %></li>
-			<nav>				
-				<ul class= "nav navbar-nav navbar-center">
-					<li><%= link_to "Add a Trip", "#" %> </li>
-					<li> <%= link_to "About", "#" %> </li>
-					<li> <%= link_to "Plan", "#" %> </li>
-					<li> <%= link_to "Search", "#" %> </li>
-				</ul>
-			</nav>
-			<nav>
-				<ul class = "nav navbar-nav navbar-right nav-login">
-					<li> <%= button_to "Login", "#", id:"login-nav" %></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<%= render 'layouts/navbar' %>
 <div class="container">
 	<%= yield %>
+	<%= render 'layouts/footer' %>
 </div>
 </body>
 </html>

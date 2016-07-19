@@ -1,5 +1,7 @@
 @import"bootstrap-sprockets";
 @import "bootstrap";
+
+$light-grey: #777;
 /*universal*/
 
 body {
@@ -16,11 +18,11 @@ textarea {
 
 .center {
 	text-align:center;
+  h1{
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-	margin-bottom: 10px;
-}
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -38,7 +40,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $light-grey;
 }
 
 p {
@@ -57,24 +59,24 @@ p {
   letter-spacing: -1px;
   padding-top: 25px;
   font-weight: bold;
+  &hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-header {
+.header {
 	color: #fff;
 }
 .nav {
 	font-family: "Brush Script MT", cursive;
 	font-size: 1.4em;
 	font-weight: bold; 
+  &hover {
+    color: #7FFF00;
+}
+}
 
-}
-.nav:hover {
-	color: #7FFF00;
-}
 #login-nav {
 	font-family: "Brush Script MT", cursive;
 	letter-spacing: 2px;
@@ -88,9 +90,32 @@ header {
 	background-color: #7FFF00; /* LimeGreen */
 	display: inline-block;
 	transition-duration: 0.4s;
+  &hover { 
+	 color: #7FFF00;
+	 background-color: black; 
+  }
 }
 
-#login-nav:hover { 
-	color: #7FFF00;
-	background-color: black; 
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: $light-grey;
+  a{
+  color: #555;
+  &:hover {
+  color: #222;
+    }
+  }
+  small{
+  float: center;
+  }
+  ul{
+  float: right;
+  list-style: none;
+  li { 
+  float: left;
+  margin-left: 15px;
+  }
+  }
 }

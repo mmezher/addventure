@@ -13,14 +13,14 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+root "pages#show", page: "home"
 get "/pages/:page" => "pages#show"
 get "/pages/home", to: "pages#home", as: "home"
 get "/pages/plan", to: "pages#plan", as: "plan"
 get "/pages/browse", to: "pages#browse", as: "browse"
 get "/pages/add", to: "pages#add", as: "add"
 get "/pages/about", to: "pages#about", as: "about"
-root "pages#show", page: "home"
+get "/pages/login", to: "pages#login", as: "login"
 
   # Example resource route with options:
   #   resources :products do

@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<li><%= link_to "AddVenture", home_path, id:"logo" %></li>
+			<nav>				
+				<ul class= "nav navbar-nav navbar-center">
+					<li><%= link_to "Add a Trip", add_path %> </li>
+					<li> <%= link_to "About", about_path %> </li>
+					<li> <%= link_to "Plan", plan_path %> </li>
+					<li> <%= link_to "Search", browse_path %> </li>
+				</ul>
+			</nav>
+			<nav>
+				<ul class = "nav navbar-nav navbar-right nav-login">
+					<li> <%= button_to "Login", login_path , id:"login-nav", :method => :get %></li>
+				</ul>
+			</nav>
+		</div>
+	</header>

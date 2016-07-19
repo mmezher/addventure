@@ -13,6 +13,8 @@ class PagesController < ApplicationController
 	end
 	def plan
 	end
+	def login
+	end
 
 	
 end 
