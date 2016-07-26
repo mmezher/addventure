@@ -21,6 +21,7 @@ get "/pages/browse", to: "pages#browse", as: "browse"
 get "/pages/add", to: "pages#add", as: "add"
 get "/pages/about", to: "pages#about", as: "about"
 get "/pages/login", to: "pages#login", as: "login"
+get "/signup", to: "users#new", as: "signup"
 
   # Example resource route with options:
   #   resources :products do
