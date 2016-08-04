@@ -13,6 +13,9 @@ $light-grey: #777;
 .body {
 	padding-top: 60px;
   margin: 100px;
+  small{
+  padding-top: 200px;
+  }
 }
 
 
@@ -65,8 +68,10 @@ p {
 }
 
 #logo{
+  text-align: center;
   float: left;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 20px;
   font-size: 2.0em;
   /*color: #7FFF00;*/ /* LimeGreen */
   font-family: "Brush Script MT", cursive;
@@ -75,22 +80,34 @@ p {
   padding-top: 13px;
   font-weight: bold; 
   background-color: transparent;
-  &hover {
+  &:hover {
     color: #fff;
     text-decoration: none;
   }
 }
 
 .header {
+  display: inline-block;
 	color: #fff;
+  z-index: 10; 
+  white-space: nowrap;
+  small{
+  float: center;
+  }
 }
 .nav {
 	font-family: "Brush Script MT", cursive;
 	font-size: 1.4em;
 	font-weight: bold; 
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
   &hover {
     color: #7FFF00;
 }
+ small{
+  float: center;
+  }
 }
 
 #login-nav {
@@ -106,9 +123,12 @@ p {
 	background-color: #7FFF00; /* LimeGreen */
 	display: inline-block;
   transition-duration: 0.4s;
-  &hover { 
+  &:hover { 
 	 color: #7FFF00 !important; /*check if works*/
 	 background-color: black !important; 
+  }
+   small{
+  float: center;
   }
 }
 
@@ -168,7 +188,7 @@ aside {
   text-align: left;
   letter-spacing: -1px;
   margin-bottom: 3px;
-  margin-top: 0px;
+  margin-top: 0;
   }
   }
   }
@@ -180,4 +200,36 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input{
+  height: auto !important;
+}
+
+#error-explanation {
+  color: red;
+  ul{
+  color: red;
+  margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors{
+  @extend .has-error;
+  .form-control{
+  color: red; /* could be $state-danger-text and identify above */
+  }
+}
+
+.flash{
+  margin-top: 60px;
 }

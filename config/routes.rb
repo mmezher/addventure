@@ -22,6 +22,7 @@ get "/pages/add", to: "pages#add", as: "add"
 get "/pages/about", to: "pages#about", as: "about"
 get "/pages/login", to: "pages#login", as: "login"
 get "/signup", to: "users#new", as: "signup"
+post '/signup', to: 'users#create'
 resources :users
 
   # Example resource route with options:
