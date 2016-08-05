@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sqlite3', '1.3.11'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 gem 'puma', '3.4.0'
@@ -43,7 +43,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0' 
-
+  gem 'sqlite3', '1.3.11'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
