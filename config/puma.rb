@@ -1,4 +1,4 @@
-workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+workers Integer(ENV['WEB_CONCURRENCY'] || 0) #used to be 2, may need to change before submitting to heroku
 threads_count = Integer(ENV['RAILS_MAX_THREADS'] || 5)
 threads threads_count, threads_count
 
@@ -12,5 +12,5 @@ on_worker_boot do
 #Worker specific setup for Rails 4.1+..
 
 ActiveRecord::Base.establish_connection
-	
+
 end
