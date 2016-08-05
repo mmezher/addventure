@@ -7,12 +7,29 @@
 					<li> <%= link_to "About", about_path %> </li>
 					<li> <%= link_to "Plan", plan_path %> </li>
 					<li> <%= link_to "Search", browse_path %> </li>
+					<% if logged_in? %>
+					<li class= "dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Account <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "Profile", current_user %></li>
+							<li> <%= link_to "Settings", '#' %> </li>
+							<li class = "divider"></li>
+							<% end %>
 				</ul>
+			</li>
 			</nav>
 			<nav>
+				<% if logged_in? %>
+					<ul class = "nav navbar-nav navbar-right nav-login">
+					<li> <%= button_to "Logout", logout_path , id:"login-nav", :method => "delete" %></li>
+				</ul>
+				<% else %>
 				<ul class = "nav navbar-nav navbar-right nav-login">
 					<li> <%= button_to "Login", login_path , id:"login-nav", :method => :get %></li>
 				</ul>
+				<% end %>
 			</nav>
+
 		</div>
 	</header>
