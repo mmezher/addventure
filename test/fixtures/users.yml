@@ -3,7 +3,12 @@ monique:
 	name: Monique Example
 	email: monique@example.com
 	password_digest: <%= User.digest('password') %>
+	admin: true
 
+corwin:
+	name: Corwin Example
+	email: corwin@example.com
+	password_digest: <%= User.digest('password') %>
 ## default fixtures. not needed so commented
 
 #one:
