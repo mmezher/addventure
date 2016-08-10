@@ -28,6 +28,7 @@ delete '/logout', to: "sessions#destroy"
 get "/signup", to: "users#new", as: "signup"
 post '/signup', to: 'users#create'
 resources :users
+resources :account_activations, only: [:edit]
 
   # Example resource route with options:
   #   resources :products do
