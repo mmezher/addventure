@@ -14,7 +14,7 @@ module SessionsHelper
 			end
 		end
 	end
-
+  
 	def logged_in? #write helper functions specific in helpers
 	!current_user.nil?
 	end	

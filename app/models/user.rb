@@ -14,7 +14,7 @@ def User.digest(string)
 	BCrypt::Engine.cost
 
 	BCrypt::Password.create(string, cost:cost)
-	end
+end
 #Returns random tokens
 def User.new_token
 	SecureRandom.urlsafe_base64
@@ -32,14 +32,17 @@ def authenticated?(attribute, token)
 	return false if digest.nil?
 	BCrypt::Password.new(digest).is_password?(token)
 end 
+end
 
 def activate
-	update_attribute(:activated, true)
-	update_attribute(:activated_at, Time.zone.now)
+    update_attribute(:activated,    true)
+    update_attribute(:activated_at, Time.zone.now)
 end
 
 def send_activation_email
-	UserMailer.account_activation(self).deliver_now
+    UserMailer.account_activation(self).deliver_now
+end
+
 def forget
 	update_attribute(:remember_digest, nil)
 end

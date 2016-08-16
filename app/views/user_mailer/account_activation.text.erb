@@ -2,6 +2,6 @@ Hi <%= @user.name %>,
 
 We're so happy you've decided to begin your Ventures with us. Follow the link below to activate your account:
 
-<%= edit_account_activation_url(@user.activation_token, email: @user.email)%>
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
 
 (find me in app/views/user_mailer/account_activation.text.erb)
