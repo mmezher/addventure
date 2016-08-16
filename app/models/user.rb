@@ -32,7 +32,6 @@ def authenticated?(attribute, token)
 	return false if digest.nil?
 	BCrypt::Password.new(digest).is_password?(token)
 end 
-end
 
 def activate
     update_attribute(:activated,    true)
