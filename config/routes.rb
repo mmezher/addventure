@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
  
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -28,7 +32,7 @@ get "/signup", to: "users#new", as: "signup"
 post '/signup', to: 'users#create'
 resources :users
 resources :account_activations, only: [:edit]
-
+resources :password_resets, only: [:edit, :create, :new, :update]
   # Example resource route with options:
   #   resources :products do
   #     member do
