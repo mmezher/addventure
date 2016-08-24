@@ -90,7 +90,7 @@ p {
   font-family: "Brush Script MT", cursive;
   /*text-transform: uppercase;*/
   letter-spacing: -1px;
-  padding-top: 13px;
+  padding-top: 3px;
   font-weight: bold; 
   background-color: transparent;
   &:hover {
@@ -109,9 +109,10 @@ p {
 }
 .nav {
 	font-family: "Brush Script MT", cursive;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	font-weight: bold; 
-  display: inline-block;
+  padding-top: 7px;
+  display: table-row;
   white-space: nowrap;
   text-align: center;
   &hover {
@@ -128,12 +129,13 @@ p {
 	font-size: 20px;
 	color: #000;
 	border: 2px solid #fff;
-	margin-top: 4px;
+	margin-top: 8px;
 	border-radius: 5px;
 	padding-right: 15px;
 	padding-left: 15px;
 	background-color: #7FFF00; /* LimeGreen */
-	display: inline-block;
+	display: table-row;
+  white-space: nowrap;
   transition-duration: 0.4s;
   &:hover { 
 	 color: #7FFF00 !important; /*check if works*/
@@ -174,6 +176,11 @@ footer{
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+/* navigation when minimized */
+
+.navbar-screen{
+  
 }
 
 /* sidebar on users */
