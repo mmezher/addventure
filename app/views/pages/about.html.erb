@@ -1,7 +1,9 @@
 <% provide(:title, "About") %>
-<h2> About Page </h2> 
-	<p>
-		<b>AddVenture</b> is a project started in May 2016 by Monique Mezher, who at the time had a little to much stress on her plate and not enough adventure to taste. 
+<center>
+<h1> About AddVenture </h1> 
+<%= image_tag("about_me.png", :alt=>"mountains") %>
+	<p align="justify">
+		<b>AddVenture</b> is a project started in May 2016 by Monique Mezher (yes, that's her above), who at the time had a little to much stress on her plate and not enough adventure to taste. As you can see above, that has changed.
 
 		Monique is currently working on AddVenture on weekends and in her spare time between her Computer Science and Materials Science Engineering classes at the University of Virginia. Her goal is to create a dynamically changing road trip service, able to account for future users adventures and locations recommended by National Park Services, restaurants, and different hole-in-the-wall legends. 
 
@@ -9,3 +11,4 @@
 
 		For now, you can get <%= link_to "Back to Home", home_path %> and patiently wait for more updates! 
 	</p>
+</center>

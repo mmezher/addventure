@@ -15,6 +15,8 @@ class PagesController < ApplicationController
 	end
 	def login
 	end
+	def demo
+	end
 
 	
 end 

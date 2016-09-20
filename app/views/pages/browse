@@ -1,3 +1,6 @@
 <% provide(:title, "Search") %>
-<h2> browse </h2>
-<%= link_to "Back to Home", home_path %>
+<h2> Browse </h2>
+
+<p> Page is currently under construction. Check back later!
+For now, go: </p>
+<%= link_to "Back to Home", home_path %> 

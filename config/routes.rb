@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 root "pages#show", page: "home"
 get "/pages/:page" => "pages#show"
 get "/pages/home", to: "pages#home", as: "home"
+get "/pages/demo", to: "pages#demo", as: "demo"
 get "/pages/plan", to: "pages#plan", as: "plan"
 get "/pages/browse", to: "pages#browse", as: "browse"
 get "/pages/add", to: "pages#add", as: "add"
