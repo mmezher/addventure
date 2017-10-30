@@ -1,5 +1,7 @@
 
 <% provide(:title, "Add A Venture") %>
-<h1> Add page </h1>
-<p> for adding adventures </p>
+<center>
+<h1> Sorry, we're not accepting adventures right now. </h1>
+<p> Check back for updates soon! </p>
 <%= link_to "Back to Home", home_path %>
+</center>

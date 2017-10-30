@@ -1,3 +1,17 @@
 <% provide(:title, "Plan a Trip") %>
-<h2><b> planning page</b> </h2>
-<%= link_to "Back to Home", home_path %>
+<center> <h1> Plan Your Trip </h1> </center>
+<b> <h3> <center> Suggested Stops for You </center> </h3> </b>
+<center>  <a href="https://www.google.com/maps/search/redwood+washington/@46.6956374,-123.562657,8z/data=!3m1!4b1" target="_blank">Redwood, Washington </a>
+</br>
+ <a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576793,-122.5076404,12z/data=!3m1!4b1!4m5!3m4!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155" target="_blank">San Fransisco, California </a>
+ </br>
+ <a href="https://www.google.com/maps/place/Paris,+France/@48.8588377,2.277517,12z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219" target="_blank">Paris, France </a>
+ </br>
+ <a href="https://www.google.com/maps/place/New+York,+NY/@40.705311,-74.2581937,10z/data=!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127837!4d-74.0059413" target="_blank">New York, New York </a>
+</center> 
+<center>
+<b> <h3> Bookmarked Adventures </h3> <b> 
+ <%= link_to "East Coast Dream", demo_path %> 
+
+
+</center>

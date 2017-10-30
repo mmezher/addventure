@@ -1,0 +1,11 @@
+<h1>AddVenture</h1>
+
+<p>
+ Hi <%= @user.name %>, </p>
+
+ <p> We're so happy you've joined us to start your Ventures.
+
+  Click "Activate my account" below to activate your account.
+ </p>
+
+<%= link_to "Activate my account", edit_account_activation_url(@user.activation_token, email: @user.email) %>

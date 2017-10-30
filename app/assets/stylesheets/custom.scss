@@ -18,7 +18,9 @@ $light-grey: #777;
   }
 }
 
-
+.btn-tug {
+  padding: 14px 60px;
+}
 section {
 overflow: auto;
 }
@@ -31,7 +33,14 @@ textarea {
   background-image: url(background_lake.png);
   background-size: cover;
   color: white;
-  font-family: "Brush Script MT", cursive;
+  font-family: "Palatino Linotype";
+}
+.image_one{
+  background-image: url(banner.jpg);
+  background-size: 1200px 256px;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Palatino Linotype";
 }
 .center {
 	text-align:center;
@@ -62,7 +71,7 @@ h2 {
 }
 
 p {
-  font-family: "Brush Script MT", cursive;
+  font-family: "Palatino Linotype";
   font-size: 1.1em;
   line-height: 1.7em;
 }
@@ -87,10 +96,10 @@ p {
   margin-right: 20px;
   font-size: 2.0em;
   /*color: #7FFF00;*/ /* LimeGreen */
-  font-family: "Brush Script MT", cursive;
+  font-family: "Palatino Linotype";
   /*text-transform: uppercase;*/
   letter-spacing: -1px;
-  padding-top: 13px;
+  padding-top: 3px;
   font-weight: bold; 
   background-color: transparent;
   &:hover {
@@ -108,10 +117,11 @@ p {
   }
 }
 .nav {
-	font-family: "Brush Script MT", cursive;
-	font-size: 1.4em;
+	font-family: "Palatino Linotype";
+	font-size: 1.6em;
 	font-weight: bold; 
-  display: inline-block;
+  padding-top: 7px;
+  display: table-row;
   white-space: nowrap;
   text-align: center;
   &hover {
@@ -123,17 +133,18 @@ p {
 }
 
 #login-nav {
-	font-family: "Brush Script MT", cursive;
+	font-family: "Palatino Linotype";
 	letter-spacing: 2px;
 	font-size: 20px;
 	color: #000;
 	border: 2px solid #fff;
-	margin-top: 4px;
+	margin-top: 8px;
 	border-radius: 5px;
 	padding-right: 15px;
 	padding-left: 15px;
 	background-color: #7FFF00; /* LimeGreen */
-	display: inline-block;
+	display: table-row;
+  white-space: nowrap;
   transition-duration: 0.4s;
   &:hover { 
 	 color: #7FFF00 !important; /*check if works*/
@@ -174,6 +185,11 @@ footer{
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+/* navigation when minimized */
+
+.navbar-screen{
+  
 }
 
 /* sidebar on users */
@@ -242,8 +258,34 @@ input{
   }
 }
 
+.checkbox {
+margin-top: -10px;
+margin-bottom: 10px;
+span{
+  margin-left: 20px;
+  font-weight: normal;
+  }
+}
+
+#session_remember_me{
+  width: auto;
+  margin-left: 0;
+}
+
 /* flash setting */
 
 .flashing{
   margin-top: 100px;
+}
+ 
+/* user index page */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid $light-grey;
+  }
 }

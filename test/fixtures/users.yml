@@ -3,13 +3,23 @@ monique:
 	name: Monique Example
 	email: monique@example.com
 	password_digest: <%= User.digest('password') %>
+	admin: true
+	activated: true
+	activated_at: <%=Time.zone.now %>
 
-## default fixtures. not needed so commented
+corwin:
+	name: Corwin Example
+	email: corwin@example.com
+	password_digest: <%= User.digest('password') %>
+	activated: true
+	activated_at: <%=Time.zone.now %>
 
-#one:
- # name: MyString
-  #email: MyString
+<% 30.times do |n| %>
+  user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+<% end %>
 
-#two:
-# name: MyString
- # email: MyString

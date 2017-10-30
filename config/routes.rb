@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+ 
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -18,6 +21,7 @@ Rails.application.routes.draw do
 root "pages#show", page: "home"
 get "/pages/:page" => "pages#show"
 get "/pages/home", to: "pages#home", as: "home"
+get "/pages/demo", to: "pages#demo", as: "demo"
 get "/pages/plan", to: "pages#plan", as: "plan"
 get "/pages/browse", to: "pages#browse", as: "browse"
 get "/pages/add", to: "pages#add", as: "add"
@@ -28,7 +32,8 @@ delete '/logout', to: "sessions#destroy"
 get "/signup", to: "users#new", as: "signup"
 post '/signup', to: 'users#create'
 resources :users
-
+resources :account_activations, only: [:edit]
+resources :password_resets, only: [:edit, :create, :new, :update]
   # Example resource route with options:
   #   resources :products do
   #     member do

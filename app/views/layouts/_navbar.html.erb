@@ -1,25 +1,33 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container">
-			<nav>	
+
+<nav class="navbar  navbar-inverse ">
+		<div class="container-fluid">
+			<div class = "navbar-header">
+				<button type = "button" class="navbar-toggle" data-toggle="collapse" data-target= "#myNavbar">	
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<li><%= link_to image_tag("add_logo.gif", :border => 0, :alt => "", :title => "", :size => "100x40"), home_path, id:"logo" %></li>	
+			</div>
+			<div class= "collapse navbar-collapse navbar-left" id="myNavbar">
 				<ul class= "nav navbar-nav navbar-center">
 					<li><%= link_to "Add a Trip", add_path %> </li>
-					<li> <%= link_to "About", about_path %> </li>
+					<li> <%= link_to "About Addventure", about_path %> </li>
 					<li> <%= link_to "Plan", plan_path %> </li>
 					<li> <%= link_to "Search", browse_path %> </li>
 					<% if logged_in? %>
+					<li> <%= link_to "Users", users_path %></li>
 					<li class= "dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Account <b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
-							<li><%= link_to "Profile", current_user %></li>
-							<li> <%= link_to "Settings", '#' %> </li>
+							<li><%= link_to "My Profile", current_user %></li>
+							<li> <%= link_to "Settings", edit_user_path(current_user) %> </li>
 							<li class = "divider"></li>
 							<% end %>
 				</ul>
 			</li>
-			</nav>
-			<nav>
+			
 				<% if logged_in? %>
 					<ul class = "nav navbar-nav navbar-right nav-login">
 					<li> <%= button_to "Logout", logout_path , id:"login-nav", :method => "delete" %></li>
@@ -30,6 +38,6 @@
 				</ul>
 				<% end %>
 			</nav>
-
 		</div>
 	</header>
+</div>
