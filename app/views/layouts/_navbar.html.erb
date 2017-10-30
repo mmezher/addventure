@@ -9,10 +9,10 @@
 				</button>
 				<li><%= link_to image_tag("add_logo.gif", :border => 0, :alt => "", :title => "", :size => "100x40"), home_path, id:"logo" %></li>	
 			</div>
-			<div class= "collapse navbar-collapse navbar-center" id="myNavbar">
+			<div class= "collapse navbar-collapse navbar-left" id="myNavbar">
 				<ul class= "nav navbar-nav navbar-center">
 					<li><%= link_to "Add a Trip", add_path %> </li>
-					<li> <%= link_to "About", about_path %> </li>
+					<li> <%= link_to "About Addventure", about_path %> </li>
 					<li> <%= link_to "Plan", plan_path %> </li>
 					<li> <%= link_to "Search", browse_path %> </li>
 					<% if logged_in? %>
